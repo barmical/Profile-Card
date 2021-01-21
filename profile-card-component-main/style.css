@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19a1ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: Kumbh Sans;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.top {
+  position: absolute;
+  width: 978px;
+  height: 978px;
+  left: -400px;
+  top: -450px;
+}
+
+.bottom {
+  position: absolute;
+  left: 60%;
+  right: -19.92%;
+  top: 61.91%;
+  bottom: -57.42%;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: aliceblue;
+  border-radius: 25px 25px 25px 25px;
+  filter: drop-shadow(0px 4px 73px rgba(0, 0, 0, 0.25));
+  display: grid;
+  grid-template-rows: 0.8fr 1fr 0.5fr;
+  grid-template-areas:
+    "foto"
+    "content"
+    "follower";
+}
+
+.header {
+  grid-area: foto;
+}
+
+.header img {
+  width: 400px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.profile {
+  height: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto {
+  border-radius: 50%;
+  position: absolute;
+  top: 103px;
+  border: 5px solid aliceblue;
+}
+
+.atas {
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+span {
+  color: hsl(0, 0%, 59%);
+  margin-left: 7px;
+}
+
+.bawah {
+  margin-top: 13px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.follower {
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.foll,
+.likes,
+.photo {
+  text-align: center;
+  margin: 0px 37px;
+  padding: px;
+}
+
+.type {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 375px) {
+  body {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+
+  .top {
+    position: absolute;
+    width: 978px;
+    height: 978px;
+    left: -736px;
+    top: -696px;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 30.13%;
+    right: -190.93%;
+    top: 40.48%;
+    bottom: -87.11%;
+  }
+
+  .container {
+    width: 300px;
+    height: 400px;
+  }
+
+  .header img {
+    width: 300px;
+  }
+
+  .profile {
+    width: 300px;
+    height: 200px;
+  }
+
+  .profile .foto {
+    top: 70px;
+  }
+
+  .follower {
+    width: 300px;
+  }
+
+  hr {
+    height: 1px;
+  }
+
+  .foll,
+  .likes,
+  .photo {
+    margin: 0px 10px;
+  }
+}
